@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  
+  font-family: Arial, sans-serif;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://wallpapers.com/images/featured/tema-escuro-drsp0bosfotvrzxa.jpg'); 
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.topbar {
+  position: fixed;
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 10px;
+  color: #ffffff;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li {
+  margin: 10px;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+}
