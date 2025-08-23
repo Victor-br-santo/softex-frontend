@@ -4,7 +4,7 @@ body {
     color: rgb(250, 240, 227);
 }
 
-h1{
+h1 {
     color: black;
 }
 
@@ -14,6 +14,22 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://wallpapers.com/images/featured/tema-escuro-drsp0bosfotvrzxa.jpg");
+    height: 90vh;
+    min-height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
 .topBar {
@@ -65,7 +81,7 @@ h1{
 }
 
 .imgSobre {
-    width: 30%;
+    width: 50%;
     border-radius: 20px;
     transition: transform 0.3s ease
 }
@@ -78,8 +94,49 @@ h1{
     display: flex;
     align-items: center;
     border-radius: 20px;
-    background-color: rgb(169, 170, 170);
+    min-height: 30vh;
+    gap: 20px;
+
 }
+
+.sobre-text {
+    background-color: rgb(169, 170, 170);
+    min-height: inherit;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 5px 20px rgba(1, 1, 5, 0.9)
+}
+
+
+.text-decorado {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.text-decorado h1 {
+    color: #b8c3cc ;
+    text-shadow: 1px 10px 20px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    font-size: 40px;
+}
+
+.text-decorado h1:nth-child(odd):hover {
+    transform: scale(2.0) translate(10px);
+    color: blueviolet;
+}
+
+.text-decorado h1:nth-child(even):hover {
+    transform: scale(2.0) translate(10px);
+    color: rgb(61, 43, 226);
+}
+
 
 
 /* 
