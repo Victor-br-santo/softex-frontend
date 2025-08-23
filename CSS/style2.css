@@ -1,8 +1,14 @@
-body{
-    background-color: linear-grandient(135deg );
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    color: rgb(250, 240, 227);
 }
 
-.content {
+h1{
+    color: black;
+}
+
+.container {
     max-width: 100%;
     position: relative;
     display: flex;
@@ -12,20 +18,13 @@ body{
 
 .topBar {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 92%;
+    width: 100%;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
-    background-color: rgba(0, 0, 0, 0.5); 
-}
-
-.logo img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .menu ul {
@@ -43,7 +42,14 @@ body{
     color: white;
     text-decoration: none;
     font-size: 18px;
-    transition: 0.3s;
+    margin-right: 20px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 20px;
 }
 
 .menu ul li a:hover {
@@ -51,19 +57,30 @@ body{
     color: #ddd;
 }
 
-.imgMain {
+.img {
     width: 100%;
     height: auto;
-    border-radius: 0; 
+    border-radius: 0;
     display: block;
 }
 
-.card{
-    background-color: antiquewhite;
-    padding: 20px;
+.imgSobre {
+    width: 30%;
     border-radius: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease
 }
+
+.imgSobre:hover {
+    transform: scale(1.1);
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(169, 170, 170);
+}
+
 
 /* 
 h1 {
