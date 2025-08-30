@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu portfolio</title>
     <link rel="stylesheet" href="../CSS/portStyle.css">
+
 </head>
 
 <body>
@@ -76,29 +77,43 @@
         </div>
     </section>
 
-    <section id="Contato" class="Contato">
+    <section class="Contato">
         <div class="form">
             <h2>Entre em Contato</h2>
-            <form>
+            <form id="contact-form">
                 <input type="text" placeholder="Nome" id="name" required>
                 <input type="email" placeholder="Email" id="email" required>
                 <textarea name="message" id="message" placeholder="Mensagem"></textarea>
-                <button type="submit">Enviar</button>
+                <button id="btn-form" type="submit">Enviar</button>
             </form>
         </div>
     </section>
 
+    <script src="../JS/script.js"></script>
+
     <footer class="footer-column">
-        <div class="rodape">
-            <h2>LOGO</h2>
-            <p>tal coisa ai mano parada paia</p>
+        <div class="conteudo-footer">
+            <div class="rodape">
+                <h2>LOGO</h2>
+                <p>tal coisa ai mano parada paia</p>
+            </div>
+            <div class="rodape-1">
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="#">Whatsapp</a></li>
+                    <li><a href="#">Email</a></li>
+                </ul>
+            </div>
+            <div class="rodape-1">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#Sobre">Sobre</a></li>
+                    <li><a href="#Contato">Contato</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="rodape-1">
-            <h4>Contato</h4>
-            <ul>
-                <li><a href="#">Whatsapp</a></li>
-                <li><a href="#">Email</a></li>
-            </ul>
+        <div class="copyright">
+            <p>Copyright&copy;2025 Designed by Victor Bruno</p>
         </div>
     </footer>
 </body>

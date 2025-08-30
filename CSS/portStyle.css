@@ -1,3 +1,9 @@
+:root{
+    --primary-color: rgb(63, 63, 155);
+}
+
+
+
 body {
     margin: 0;
     background-color: #f4f4f4;
@@ -92,12 +98,13 @@ body::-webkit-scrollbar {
 /* formulario */
 .form {
     padding: 20px;
-    max-width: 400px;
+    max-width: 30%;
     margin: 50px auto;
     border-radius: 10px;
     background-color: rgb(236, 236, 236);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border: 1px solid #ccc;
+    transition: transform 0.3s ease
 }
 
 
@@ -130,7 +137,7 @@ body::-webkit-scrollbar {
 .form button {
     width: 100%;
     padding: 10px;
-    background: #007BFF;
+    background: var(--primary-color);
     color: white;
     border: none;
     border-radius: 5px;
@@ -216,13 +223,11 @@ body::-webkit-scrollbar {
 /* fim do card */
 
 footer {
-    display: flex;
     background-color: rgb(31, 31, 31);
     gap: 150px;
     margin-top: auto;
     padding: 50px;
     align-items: center;
-
     margin-bottom: 0;
 
     & h2 {
@@ -253,11 +258,21 @@ footer {
 }
 
 .rodape-1 {
-    justify-content: column;
     align-items: flex-start;
 
     & ul {
         margin: 0;
         padding: 0;
     }
+}
+
+.conteudo-footer{
+     display: flex;
+    justify-content: space-around;
+}
+
+.copyright{
+    padding-top: 30px;
+    align-items: center;
+    text-align: center;
 }
