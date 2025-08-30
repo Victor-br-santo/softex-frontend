@@ -1,0 +1,139 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Cards</title>
+  <style>
+    /* Estilo geral */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f9;
+    }
+
+    /* Container dos cards */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    /* Estilo do card */
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Imagem do card */
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    /* Conteúdo do card */
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      margin: 0 0 10px;
+      font-size: 1.5em;
+      color: #333;
+    }
+
+    .card-content p {
+      margin: 0;
+      font-size: 1em;
+      color: #666;
+    }
+
+    /* Botão do card */
+    .card-content a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 0.9em;
+      transition: background-color 0.3s ease;
+    }
+
+    .card-content a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagem do Card">
+      <div class="card-content">
+        <h3>Título do Card</h3>
+        <p>Este é um exemplo de card simples com HTML e CSS.</p>
+        <a href="#">Saiba Mais</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagem do Card">
+      <div class="card-content">
+        <h3>Outro Card</h3>
+        <p>Você pode adicionar quantos cards quiser neste layout.</p>
+        <a href="#">Saiba Mais</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- 
+Explicação:
+
+
+HTML:
+
+Cada card é representado por um div com a classe .card.
+Dentro do card, há uma imagem (<img>), um título (<h3>), um parágrafo (<p>) e um botão/link (<a>).
+
+
+
+CSS:
+
+Estilo do Card: O card tem bordas arredondadas, sombra e um efeito de "elevação" ao passar o mouse.
+Responsividade: O layout usa flex-wrap para que os cards se ajustem automaticamente em telas menores.
+Botão: O botão tem um efeito de hover para melhorar a experiência do usuário.
+
+
+
+
+Resultado:
+
+Visual: Os cards terão uma aparência moderna, com imagem, texto e botão.
+Responsivo: Funciona bem em dispositivos móveis e desktops.
+
+Você pode personalizar as cores, fontes e tamanhos para atender às suas necessidades! -->
