@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style5.css">
+    <title>Atividade de javascript</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="conversorF">
+            <h3>Conversor de celsius para fahrenheit</h3>
+            <input type="text" id="celsius" placeholder="digite um grau celsius">
+            <input type="text" id="grauFahrenheit" placeholder="grau fahrenheit convertido">
+            <button onclick="converterTemperatura()" id="converterGrau">CONVERTER</button>
+        </div>
+        <div class="conversorF">
+            <h3>calcular circunferencia de um circulo</h3>
+            <input type="text" id="raio" placeholder="Digite o raio do circulo">
+            <input type="text" id="circunferenciaCal" placeholder="Circunferencia calculada">
+            <button id="calcularCir">CALCULAR</button>
+        </div>
+        <div class="conversorF">
+            <h3>Conversor de Reais para Dólares</h3>
+            <input type="number" id="valorReais" placeholder="Ex: 100" min="0">
+            <input type="text" id="resultadoDolar" placeholder="O valor convertido vai aparecer aqui">
+            <button onclick="converterDolar()">Converter</button>
+        </div>
+    </div>
+    
+    <div class="container-2">
+        <div class="conversorF">
+            <h3>Calculadora de Imc</h3>
+            <input type="text" id="peso" placeholder="Digite seu peso">
+            <input type="text" id="altura" placeholder="Digite sua altura">
+            <input type="text" id="resultado" placeholder="Seu Imc vai aparecer aqui">
+            <button onclick="calcularImc()" id="calcular">CALCULAR</button>
+        </div>
+
+        <div class="conversorF">
+            <h3>Calcular area do retangulo</h3>
+            <input type="text" id="largura" placeholder="largura">
+            <input type="text" id="altura1" placeholder="altura">
+            <input type="text" id="resultadoArea" placeholder="Area aqui">
+            <button onclick="calcularArea()" id="calcularArea">CALCULAR</button>
+        </div>
+    </div>
+
+    <div class="conversorF">
+        <h3>Média aritmética de 4 valores</h3>
+        <input type="text" id="number-1" placeholder="Digite o primeiro numero">
+        <input type="text" id="number-2" placeholder="Digite o segundo numero">
+        <input type="text" id="number-3" placeholder="Digite o terceiro numero">
+        <input type="text" id="number-4" placeholder="Digite o quarto numero">
+        <input type="text" id="mediaCalculada" placeholder="A media vai aparecer aqui">
+        <button onclick="calcularMedia()" id="calcular-m">CALCULAR</button>
+        <button id="voltar" class="ocultar">VOLTAR</button>
+    </div>
+
+
+    <script src="../JS/atividade.js"></script>
+</body>
+
+</html>

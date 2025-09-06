@@ -1,7 +1,3 @@
-// console.log('Hello World')
-
-// alert("bem vindo")
-
 // pega o formulario de contato pelo id
 let form = document.getElementById("contact-form")
 // adicona um ouvinte de evento para o envio de formulario
