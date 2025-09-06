@@ -68,3 +68,14 @@ function calcularMedia(){
 // let button = document.getElementById("calcular-m");
 // button.addEventListener("click", calcularMedia)
 
+function limparCampos() {
+    const inputs = document.querySelectorAll('input[type="text"]');
+    
+    inputs.forEach(input => {
+        input.value = '';
+    });
+}
+
+
+
+
