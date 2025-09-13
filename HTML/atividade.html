@@ -37,6 +37,7 @@
             <input type="text" id="altura" placeholder="Digite sua altura">
             <input type="text" id="resultado" placeholder="Seu Imc vai aparecer aqui">
             <button onclick="calcularImc()" id="calcular">CALCULAR</button>
+            <button onclick="limparCampos('peso', 'altura')" id="voltar" class="ocultar">VOLTAR</button>
         </div>
 
         <div class="conversorF">
@@ -45,10 +46,11 @@
             <input type="text" id="altura1" placeholder="altura">
             <input type="text" id="resultadoArea" placeholder="Area aqui">
             <button onclick="calcularArea()" id="calcularArea">CALCULAR</button>
+            <button onclick="limparCampos('largura', 'altura1')" id="voltar" class="ocultar">VOLTAR</button>
         </div>
     </div>
 
-    <div class="conversorF">
+    <!-- <div class="conversorF">
         <h3>Média aritmética de 4 valores</h3>
         <input type="text" id="number-1" placeholder="Digite o primeiro numero">
         <input type="text" id="number-2" placeholder="Digite o segundo numero">
@@ -57,7 +59,7 @@
         <input type="text" id="mediaCalculada" placeholder="A media vai aparecer aqui">
         <button onclick="calcularMedia()" id="calcular-m">CALCULAR</button>
         <button onclick="limparCampos('number-1', 'number-2', 'number-3', 'number-4')"  id="voltar" class="ocultar">VOLTAR</button>
-    </div>
+    </div> -->
 
 
     <script src="../JS/atividade.js"></script>
